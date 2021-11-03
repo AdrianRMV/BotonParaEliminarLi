@@ -1,12 +1,11 @@
 const myButton = document.getElementById("btnClick");
 const myUl = document.getElementById("contenedor");
 const liReferences = [ ];
-let contador = 1;
 
 myButton.onclick = (event) => {
   const btnDelete = document.createElement("button");
   const miLi =  document.createElement("li");
-  miLi.innerText = `Elemento lista #${contador}`;
+  miLi.innerText = "Elemento lista";
   btnDelete.innerText = "X";
   liReferences.push(miLi);// Para saber la posicion de los li
   myUl.appendChild(miLi); // Agregar el li al ul
